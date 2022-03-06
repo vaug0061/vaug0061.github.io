@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Third Assignment</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is an HTML document for LIB2024 Assignment 3: HTML Forms">
+	<meta name="keywords" content="HTML5, Advanced HTML, Form Tags">
+</head>
+<body>
+	<header>
+		<h1>Assignment 3: HTML Forms</h1>
+	</header>
+	<form action="somepage.php" method="get">
+		<fieldset>
+			<legend>Personal Info:</legend>
+			<!--Div containing form elements for name info-->
+			<div id="name" class="form">
+				<label for="FirstName">First name</label>
+				<input type="text" name="FirstName" id="FirstName" placeholder="E.g Jean" required>
+				<label for="LastName">Last name</label>
+				<input type="text" name="LastName" id="LastName" placeholder="E.g Doe" required>
+			</div>
+			<!--Div containing form elements for email info-->			
+			<div id="mail" class="form">
+				<label for="email">Email</label>
+				<input type="email" name="email" id="email" placeholder="example@mail.com" required><br>
+				<label for="pass">Password</label>
+				<input type="password" name="pass" id="pass" required>
+			</div>
+			<!--Div containing form elements for gender info-->
+			<div id="gender" class="form">
+				<label for="gender">Gender</label>
+					<input type="radio" id="male" name="gender" value="male">
+					<label for="male">Male</label>
+					<input type="radio" id="female" name="gender" value="female">
+					<label for="female">Female</label>
+					<input type="radio" id="other" name="gender" value="other">
+					<label for="other">Other</label>
+			</div>
+			<!--Div containing form elements for other personal info-->
+			<div id="other-personal" class="form">
+				<label for="dob">Date of Birth</label>
+				<input type="date" name="dob" id="dob"><br>
+				<label for="phone">Phone Number</label>
+				<input type="number" id="phone" name="phone" required><br>
+			</div>
+
+		</fieldset>
+		<fieldset>
+			<legend>Address:</legend>
+			<!--Div containing form elements for address info entered via text-->
+			<div id="ad-txt" class="form">
+				<label for="address">Street Address</label>
+				<input type="text" name="Address" id="Address" placeholder="E.g 123 Street Ave.">
+				<label for="postal">Postal Code</label>
+				<input type="text" name="postal" id="postal" placeholder="E.g A1A 1A1">
+				<label for="city">City</label>
+				<input type="text" name="city" id="city">
+			</div>
+			<!--Div containing form elements for province selection drop-down-->
+			<div id="province" class="form">
+				<label for="province">Province</label>
+				<select name="province" id="province">
+					<option value="---" selected>---</option>
+					<option value="alberta">Alberta</option>
+					<option value="british columbia">British Columbia</option>
+					<option value="manitoba">Manitoba</option>
+					<option value="new brunswick">New Brunswick</option>
+					<option value="newfoundland and labrador">Newfoundland and Labrador</option>
+					<option value="northwest territories">Northwest Territories</option>
+					<option value="nova scotia">Nova Scotia</option>
+					<option value="nunavut">Nunavut</option>
+					<option value="ontario">Ontario</option>
+					<option value="prince edward island">Prince Edward Island</option>
+					<option value="quebec">Quebec</option>
+					<option value="saskatchewan">Saskatchewan</option>
+					<option value="yukon">Yukon</option>
+				</select>
+			</div>
+			<!--Div containing form elements for country selection drop-down-->
+			<div id="country" class="form">
+				<label for="country">Country</label>
+				<select name="country" id="country">
+					<option value="---" selected>---</option>
+					<option value="canada">Canada</option>
+				</select>
+			</div>
+
+		</fieldset>
+		<!--Div containing form elements for hobby info-->
+		<div id="hobby" class="form">
+			<p>Hobbies</p>
+			<input type="checkbox" name="hobbies" id="reading" value="reading">
+			<label for="reading">Reading</label><br>
+			<input type="checkbox" name="hobbies" id="knitting" value="knitting">
+			<label for="knitting">Knitting</label><br>
+			<input type="checkbox" name="hobbies" id="sports" value="sports">
+			<label for="sports">Sports</label><br>
+			<input type="checkbox" name="hobbies" id="art" value="art">
+			<label for="art">Art</label><br>
+		</div>
+		<!--Div containing form elements for intro and URL info-->
+		<div id="txt" class="form">
+			<label for="introduction">Introduction</label><br>
+			<textarea name="introduction" id="introduction"></textarea><br>
+			<label for="site">Website URL</label>
+			<input type="url" name="site" id="site" >
+		</div>
+		<!--Div containing form elements for form controls-->
+		<div id="buttons" class="form">
+			<button type="submit">Submit</button>
+			<button type="reset">Reset</button>
+		</div>
+	</form>
+</body>
+</html>
