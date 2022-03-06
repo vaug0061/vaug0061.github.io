@@ -28,8 +28,8 @@
 				<input type="password" name="pass" id="pass" required>
 			</div>
 			<!--Div containing form elements for gender info-->
-			<div id="gender" class="form">
-				<label for="gender">Gender</label>
+			<div id="gender-div" class="form">
+				<span>Gender</span>
 					<input type="radio" id="male" name="gender" value="male">
 					<label for="male">Male</label>
 					<input type="radio" id="female" name="gender" value="female">
@@ -51,14 +51,14 @@
 			<!--Div containing form elements for address info entered via text-->
 			<div id="ad-txt" class="form">
 				<label for="address">Street Address</label>
-				<input type="text" name="Address" id="Address" placeholder="E.g 123 Street Ave.">
+				<input type="text" name="address" id="address" placeholder="E.g 123 Street Ave.">
 				<label for="postal">Postal Code</label>
 				<input type="text" name="postal" id="postal" placeholder="E.g A1A 1A1">
 				<label for="city">City</label>
 				<input type="text" name="city" id="city">
 			</div>
 			<!--Div containing form elements for province selection drop-down-->
-			<div id="province" class="form">
+			<div id="province-div" class="form">
 				<label for="province">Province</label>
 				<select name="province" id="province">
 					<option value="---" selected>---</option>
@@ -78,9 +78,9 @@
 				</select>
 			</div>
 			<!--Div containing form elements for country selection drop-down-->
-			<div id="country" class="form">
+			<div id="country-div" class="form">
 				<label for="country">Country</label>
-				<select name="country" id="country">
+				<select name="country-select" id="country">
 					<option value="---" selected>---</option>
 					<option value="canada">Canada</option>
 				</select>
