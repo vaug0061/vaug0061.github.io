@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>LIB2024 Final</title>
+	<meta charset="utf-8">
+	<meta name="description" content="This is an HTML document for LIB2024 Final">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<h1>My Logo</h1>
+		<nav id=head-nav>
+			<ul> 
+				<li><a href="home.com" target="_blank">Home</a></li>
+				<li><a href="about.com" target="_blank">About</a></li>
+				<li><a href="schedule.com" target="_blank">Schedule</a></li>
+				<li><a href="portfolio.com" target="_blank">Portfolio</a></li>
+				<li><a href="contact.com" target="_blank">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<section id=about>
+			<div class=about>
+				<img id=about-img src="img/bridge.jpg" alt="bridge">
+			</div>
+			<h2>About</h2>
+			<p>Pellentesque sit amet elementum odio. Donec luctus, odio gravida posuere tincidunt, nulla augue vehicula dolor, id pretium lacus arcu a est. Nulla iaculis vestibulum lacus bibendum dignissim. Donec in mattis dui. Integer efficitur nulla vel tortor semper, non pharetra dolor tempor. Praesent dignissim, ex ut tempor aliquam, est lectus ultrices neque, ut maximus neque odio ut ligula. Quisque auctor egestas libero, ut ultrices dui malesuada sed. Aliquam vitae ex scelerisque, dignissim augue nec, sollicitudin mi. Mauris ut augue posuere erat rhoncus rhoncus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus venenatis vestibulum dui nec volutpat. Sed et mi metus. Nulla facilisi. Donec efficitur, nisi a placerat aliquam, ipsum odio vehicula ligula, non efficitur sem mauris sit amet est.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut vehicula ipsum, id condimentum risus. Donec convallis sem nec mi lacinia aliquet. Vestibulum ultricies lobortis lectus nec rutrum. Pellentesque tincidunt iaculis lorem at varius. Maecenas ac elementum ligula. Duis sed faucibus urna, egestas vulputate sem. Vestibulum eget purus nisi. Donec eget tincidunt enim. Donec at nulla in mauris maximus commodo. Integer nec erat lacus. Donec vel arcu non lorem hendrerit porta. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nunc tincidunt commodo dolor, a accumsan risus scelerisque vitae. In varius sapien turpis, a aliquet turpis faucibus eget. Phasellus vel aliquet nulla, nec ullamcorper risus.</p>
+			
+		</section>
+		<section id=schedule>
+			<h2>Schedule</h2>
+			<table>
+				<thead>
+					<tr>
+						<th>Time</th>
+						<th>Monday</th>
+						<th>Tuesday</th>
+						<th>Wednesday</th>
+						<th>Thursday</th>
+						<th>Friday</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>09:00-11:00</td>
+						<td>Communications 1</td>
+						<td>Client Services</td>
+						<td>Special Collections</td>
+						<td>Directed Research Seminar</td>
+						<td>Client Services</td>
+					</tr>
+					<tr>
+						<td>11:00-12:30</td>
+						<td>Reference</td>
+						<td>Internet App</td>
+						<td>Library Software</td>
+						<td>French</td>
+						<td>Reference</td>
+					</tr>
+					<tr>
+						<td>14:00-15:00</td>
+						<td>Acquisitions</td>
+						<td>General Elective</td>
+						<td>Marketing</td>
+						<td>Emerging Library Tech</td>
+						<td>Library Software</td>
+					</tr>
+					<tr>
+						<td>15:30-17:30</td>
+						<td>French</td>
+						<td>French</td>
+						<td>Acquisitions</td>
+						<td>Subject Analysis</td>
+						<td>Internet App</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		<section id=edit>
+			<form action="somepage.php" method="get">
+				<div id=title-div class=edit>
+					<h2>Edit Profile</h2>
+				</div>
+				<div id=name-div class=edit>
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name">
+				</div>
+				<div id=email-div class=edit>
+					<label for="email">Email:</label>
+					<input type="text" name="email" id="email">
+				</div>
+				<div id=address-div class=edit>
+					<label for="address">Address:</label>
+					<input type="text" name="address" id="address">
+				</div>
+				<div id=city-div class=edit>
+					<label for="city">City:</label>
+					<input type="text" name="city" id="city">
+				</div>
+				<div id="province-select" class="edit">
+					<label for="province">Province</label>
+					<select name="province" id="province">
+						<option value="---" selected>Select Province</option>
+						<option value="alberta">Alberta</option>
+						<option value="british columbia">British Columbia</option>
+						<option value="manitoba">Manitoba</option>
+						<option value="new brunswick">New Brunswick</option>
+						<option value="newfoundland and labrador">Newfoundland and Labrador</option>
+						<option value="northwest territories">Northwest Territories</option>
+						<option value="nova scotia">Nova Scotia</option>
+						<option value="nunavut">Nunavut</option>
+						<option value="ontario">Ontario</option>
+						<option value="prince edward island">Prince Edward Island</option>
+						<option value="quebec">Quebec</option>
+						<option value="saskatchewan">Saskatchewan</option>
+						<option value="yukon">Yukon</option>
+					</select>
+				</div>
+				<div id=postal-div class=edit>
+					<label for="postal">Postal Code:</label>
+					<input type="text" name="postal" id="postal">
+				</div>
+				<div id=submit class=edit>
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		
+		<aside id=info>
+			<h2>Profile info</h2>
+		</aside>
+		</section>
+	</main>
+
+	<footer>
+		<div id=quick>
+			<h6>Quick Links</h6>
+			<nav>
+				<ul>
+					<li><a href="schedule.com" target="_blank">Schedule</a></li>
+					<li><a href="about.com" target="_blank">About</a></li>
+					<li><a href="portfolio.com" target="_blank">Portfolio</a></li>
+					<li><a href="contact.com" target="_blank">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id=socials>
+			<h6>Follow Us</h6>
+			<nav id=foot-nav>
+				<ul>
+					<li><a href="facebook.com" target="_blank"><img src="img/facebook.png" alt="facebok"></a></li>
+					<li><a href="youtube.com" target="_blank"><img src="img/youtube.png" alt="youtube"></a></li>
+					<li><a href="twitter.com" target="_blank"><img src="img/twitter.png" alt="twitter"></a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id=addressinfo>
+			<h6>Address</h6>
+			<p>1385 Woodroofe Ave,<br>Nepean, ON K2G 1V8<br>Canada</p>
+		</div>
+	</footer>
+</body>
+</html>
+<!--I ran out of time (╥_╥)-->
